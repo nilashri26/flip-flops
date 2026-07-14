@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Space Grotesk", sans-serif;
+}
+
+/* Custom glow effect animations for live wires */
+@keyframes wireGlowEmerald {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px rgba(16, 185, 129, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 6px rgba(16, 185, 129, 0.8));
+  }
+}
+
+@keyframes wireGlowBlue {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px rgba(37, 99, 235, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 6px rgba(37, 99, 235, 0.8));
+  }
+}
+
+@keyframes wireGlowAmber {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px rgba(245, 158, 11, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 6px rgba(245, 158, 11, 0.8));
+  }
+}
+
+.shadow-emerald-500 {
+  animation: wireGlowEmerald 2s infinite ease-in-out;
+}
+
+.shadow-blue-500 {
+  animation: wireGlowBlue 2s infinite ease-in-out;
+}
+
+.shadow-amber-500 {
+  animation: wireGlowAmber 2s infinite ease-in-out;
+}

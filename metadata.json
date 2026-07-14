@@ -1,0 +1,6 @@
+{
+  "name": "Flip-Flops Simulator",
+  "description": "An interactive digital electronics laboratory simulator for SR, JK, D, and T Flip-Flops with gate-level visualization, real-time waveform timing diagrams, and guided laboratory experiments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
